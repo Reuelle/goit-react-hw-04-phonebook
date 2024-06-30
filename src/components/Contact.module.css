@@ -1,0 +1,38 @@
+/* src/components/Contact.module.css */
+
+.phonebook {
+   display: flex;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 350px;
+  background: rgb(248, 246, 247);
+  background: rgb(223, 217, 220);
+  padding: 15px;
+  border-radius: 10px;
+  color: rgb(6, 1, 8);
+}
+
+/* Add this new style to center the elements */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+}
+.block {
+  margin: 10px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(35, 126, 124, 0.14);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

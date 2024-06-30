@@ -1,0 +1,26 @@
+.btn {
+    width: 70px;
+    padding: 2px;
+    background: rgb(167, 163, 168);
+    color: white;
+    border: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+   text-transform: capitalize;
+
+    &:hover {
+        color: white;
+        background: rgb(116, 105, 121);
+    }
+}
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    color: black;
+
+}
+.item {
+    margin-bottom: 5px;
+}
