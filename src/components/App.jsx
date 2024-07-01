@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
-import useLocalStorage from '../../hooks/useLocalStorage';
+import useLocalStorage from './hooks/useLocalStorage';
 import PhonebooksForm from './ContactForm/ContactForm';
 import PhonebookList from './ContactList/ContactList';
 import PhonebooksFilter from './ContactFilter/ContactFilter';
