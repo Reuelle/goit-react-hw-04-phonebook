@@ -10,7 +10,6 @@ const Phonebooks = () => {
   const [contacts, setContacts] = useLocalStorage('contacts', []);
   const [filter, setFilter] = useState('');
 
-  // Add a new contact
   const addContact = ({ name, number }) => {
     if (isDuplicate(name, number)) {
       alert(`${name}: ${number} already exists`);
@@ -27,17 +26,14 @@ const Phonebooks = () => {
     return true;
   };
 
-  // Remove a contact by id
   const removeContact = (id) => {
     setContacts((prevContacts) => prevContacts.filter((contact) => contact.id !== id));
   };
 
-  // Handle filter input change
   const handleFilter = ({ target }) => {
     setFilter(target.value);
   };
 
-  // Check for duplicate contacts
   const isDuplicate = (name, number) => {
     const normalizedName = name.toLowerCase();
     const normalizedNumber = number.toLowerCase();
@@ -48,7 +44,6 @@ const Phonebooks = () => {
     );
   };
 
-  // Get filtered contacts based on the filter input
   const getFilteredContacts = () => {
     if (!filter) {
       return contacts;
